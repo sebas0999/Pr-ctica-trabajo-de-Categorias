@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2a5298;
+}
+
+.form-description {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.product-form h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2a5298;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-submit-cancel{
+    width: 100%;
+    padding: 12px;
+    background: #c92828e5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;    
+}
+
+.btn-submit-cancel:hover {
+    background: #f10606;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #2a5298;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background: #0f53d3;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}

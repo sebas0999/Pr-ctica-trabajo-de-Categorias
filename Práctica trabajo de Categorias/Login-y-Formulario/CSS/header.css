@@ -1,0 +1,62 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #1e1e1e;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #00bfff;
+}
+
+.auth-links{
+    display: flex;
+    gap: 15px;
+}
+
+.auth-links a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.auth-links a:first-child{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.auth-links a:first-child:hover{
+    background-color: white;
+    color: black;
+}
+
+.auth-links a:last-child{
+    background-color: #00bfff;
+}
+
+.auth-links a:last-child:hover{
+    background-color: #009acd;
+}
